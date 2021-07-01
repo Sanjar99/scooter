@@ -1,0 +1,20 @@
+.container{
+  max-width: 1111px;
+  padding: 0px;
+  margin: 0px auto;
+}
+@media screen and (max-width:$tablet) {
+  .container{
+    max-width: 695px;
+    padding: 0px;
+    margin: 0px auto;
+  }
+}
+
+@media screen and (max-width:$phone) {
+  .container{
+    max-width: 311px;
+    padding: 0px;
+    margin: 0px auto;
+  }
+}  

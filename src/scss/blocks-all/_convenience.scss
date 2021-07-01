@@ -1,0 +1,212 @@
+.convenience{
+  overflow-x: hidden;
+  margin-top: 120px;
+}
+.convenience__list{
+  margin: 0;
+  padding: 0;
+}
+.convenience__item{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 160px;
+  align-items: center;
+  &:nth-child(2){
+    flex-direction: row-reverse;
+  }
+}
+.convenience__item--mobility{
+  &::after{
+    content: '';
+    position: absolute;
+    width: 734.38px;
+    height: 150.37px;
+    left: 539.97px;
+    top: 260px;
+    background-image: url(../../img/icon-strelka-right.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+  }
+  &::before{
+    content: '';
+    position: absolute;
+    width: 445px;
+    height: 445px;
+    left: 1178.97px;
+    top: 0px;
+    background-image: url("../../img/icon-Mask.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+.convenience__item--say{
+  margin-bottom: 0px;
+  &::after{
+    content: '';
+    position: absolute;
+    width: 734.38px;
+    height: 150.37px;
+    left: 539.97px;
+    top: 260px;
+    background-image: url(../../img/icon-strelka-right.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    // transform: matrix(1, 0, 0, -1, 0, 0);
+  }
+  &::before{
+    content: '';
+    position: absolute;
+    width: 445px;
+    height: 445px;
+    left: 1178.97px;
+    top: 0px;
+    background-image: url("../../img/icon-Mask.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+.convenience__item--urban{
+  &::after{
+    content: '';
+    position: absolute;
+    width: 734.38px;
+    height: 150.37px;
+    left: -535.97px;
+    top: 0px;
+    background-image: url("../../img/icon-strelka-left.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+  }
+  &::before{
+    content: '';
+    position: absolute;
+    width: 445px;
+    height: 445px;
+    left: -515.97px;
+    top: 0px;
+    background-image: url("../../img/icon-Mask.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.convenience__wraper{
+  width: 445px;
+  margin-right: auto;
+}
+.convenience__wraper--urban{
+  margin-left: auto;
+  margin-right: 0px;
+} 
+.convenience__subject{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: #495567;
+  margin-bottom: 24px;
+}
+.convenience__text{
+  @include font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+  margin-bottom: 50px;
+}
+.convenience__img{
+  border-radius: 50%;
+}
+@media screen and (max-width:$tablet) {
+  .convenience__item{
+    flex-direction: column-reverse;
+    text-align: center;
+    &:nth-child(2){
+      flex-direction: column-reverse;
+    }
+  }
+  .convenience__wraper{
+    width: 573px;
+    margin: 0px auto;
+  }
+  .convenience__item--mobility{
+    &::after{
+      
+      left: 0px;
+      top: 260px;
+     
+    }
+    &::before{
+     
+      width: 445px;
+      height: 445px;
+      left: 635px;
+      top: 0px;
+     
+    }
+  }
+  .convenience__item--urban{
+    &::after{
+      
+      width: 734.38px;
+      height: 150.37px;
+      left: -420.97px;
+      top: 5px;
+      
+    }
+    &::before{
+     
+      width: 445px;
+      height: 445px;
+      left: -385.97px;
+      top: 0px;
+     
+    }
+  }
+  
+}
+@media screen and (max-width:$phone) {
+  .convenience__item{
+    flex-direction: column-reverse;
+    text-align: center;
+    &:nth-child(2){
+      flex-direction: column-reverse;
+    }
+  }
+  .convenience__wraper{
+    width: 311px;
+    margin-right: 0;
+  }
+  .convenience__item--mobility{
+    &::after{
+      left: 0px;
+      top: 134px;
+    }
+    &::before{
+     display: none;
+    }
+  }
+  .convenience__item--urban{
+    &::after{
+      left: -417.97px;
+      top: -10px;
+      
+    }
+    &::before{
+     display: none;
+    }
+  }
+  
+  .convenience__subject{
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.892857px;
+  }
+  
+
+}

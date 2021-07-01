@@ -1,0 +1,143 @@
+.FAQs {
+  text-align: center;
+  margin-bottom: 160px
+}
+
+.FAQs__list {
+  @include reset-list;
+  display: flex;
+  width: 100%;
+  margin-bottom: 64px;
+}
+
+.FAQs__list:last-child {
+  margin-bottom: 0;
+}
+
+.FAQs__title {
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14px;
+  color: #495567;
+  margin: 0;
+  margin-bottom: 64px;
+}
+
+.FAQs__list-item {
+  width: 35%;
+  margin-right: 30px;
+}
+
+.FAQs__item-title {
+  margin: 0;
+  font-size: 40px;
+  line-height: 48px;
+  color: #495567;
+}
+
+.FAQs__item-list {
+  @include reset-list;
+  width: 100%;
+}
+
+
+
+.FAQs__item-more {
+  width: 65%;
+}
+
+.FAQs__item {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.FAQs__item:last-child {
+  margin-bottom: 0;
+}
+
+.FAQs__button {
+  width: 100%;
+  padding: 32px 40px;
+  background-color: #F2F5F9;
+  border: none;
+
+  &:hover {
+    transition: 0.5s all ease;
+    background-color: #FFF4DF;
+  }
+}
+
+.FAQs__button-title {
+  margin: 0;
+  text-align: start;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07px;
+  color: #495567;
+  position: relative;
+  display: block;
+}
+
+.FAQs__button-desc {
+  display: none;
+  margin: 0;
+  margin-top: 24px;
+  color: #495567;
+  text-align: start;
+  font-size: 15px;
+  line-height: 25px;
+  @include font;
+}
+
+.FAQs__button-desc--active{
+  display: block;
+}
+
+.FAQs__title-wrapper {
+  margin: 0;
+}
+
+.FAQs__button-title::before {
+  content: "";
+  position: absolute;
+  background: url(../../img/arrow.png) no-repeat;
+  width: 18px;
+  height: 12px;
+  top: 10%;
+  left: 100%;
+  transform: translate(-50%);
+}
+
+.FAQs__button-title--active::before{
+  transform: rotate(180deg);
+  transition: .5s all ease;
+} 
+
+@media screen and (max-width: $tablet) {
+  .FAQs__list {
+    display: block;
+  }
+
+  .FAQs__list-item {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .FAQs__item-more {
+    width: 100%;
+  }
+
+  .FAQs__item-title {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: $phone) {
+  .FAQs__button-title::before {
+    transform: translate(0%);
+  }
+
+  .FAQs__list{
+    margin-bottom: 48px;
+  }
+}

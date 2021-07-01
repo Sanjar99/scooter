@@ -1,0 +1,234 @@
+.telemetriya{
+  overflow-x: hidden;
+}
+.telemetriya__list{
+  margin: 0;
+  padding: 0;
+}
+.telemetriya__item{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 160px;
+  &:nth-child(2){
+    flex-direction: row-reverse;
+  }
+}
+.telemetriya__item--easy{
+  &::after{
+    content: '';
+    position: absolute;
+    width: 734.38px;
+    height: 150.37px;
+    left: 539.97px;
+    top: 297px;
+    background-image: url("../../img/icon-strelka-right.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  &::before{
+    content: '';
+    position: absolute;
+    width: 445px;
+    height: 445px;
+    left: 1178.97px;
+    top: 0px;
+    background-image: url("../../img/icon-Mask.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+.telemetriya__item--city{
+  &::after{
+    content: '';
+    position: absolute;
+    width: 734.38px;
+    height: 150.37px;
+    left: -545.97px;
+    top: 0px;
+    background-image: url("../../img/icon-strelka-left.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  &::before{
+    content: '';
+    position: absolute;
+    width: 445px;
+    height: 445px;
+    left: -515.97px;
+    top: 0px;
+    background-image: url("../../img/icon-Mask.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+.telemetriya__item--zero{
+  &::after{
+    content: '';
+    position: absolute;
+    width: 734.38px;
+    height: 150.37px;
+    left: 916.97px;
+    top: 72px;
+    background-image: url("../../img/icon-strelka-right.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  &::before{
+    content: '';
+    position: absolute;
+    width: 445px;
+    height: 445px;
+    left: 1178.97px;
+    top: 0px;
+    background-image: url("../../img/icon-Mask.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+.telemetriya__wraper{
+  width: 445px;
+  margin-right: auto;
+}
+.telemetriya__wraper--city{
+  margin-left: auto;
+  margin-right: 0px;
+} 
+.telemetriya__subject{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: #495567;
+  margin-bottom: 24px;
+}
+.telemetriya__text{
+  @include font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+  margin-bottom: 50px;
+}
+.telemetriya__img{
+  border-radius: 50%;
+}
+@media screen and (max-width:$tablet) {
+  .telemetriya__item{
+    flex-direction: column-reverse;
+    text-align: center;
+    &:nth-child(2){
+      flex-direction: column-reverse;
+    }
+  }
+  .telemetriya__wraper{
+    width: 573px;
+    margin: 0px auto;
+  }
+  .telemetriya__item--easy{
+    &::after{
+      
+      left: 0px;
+      top: 297px;
+     
+    }
+    &::before{
+     
+      width: 445px;
+      height: 445px;
+      left: 635px;
+      top: 0px;
+     
+    }
+  }
+  .telemetriya__item--city{
+    &::after{
+      
+      width: 734.38px;
+      height: 150.37px;
+      left: -420.97px;
+      top: 5px;
+      
+    }
+    &::before{
+     
+      width: 445px;
+      height: 445px;
+      left: -445.97px;
+      top: 0px;
+     
+    }
+  }
+  .telemetriya__item--zero{
+    &::after{
+     
+      width: 734.38px;
+      height: 150.37px;
+      left: 365px;
+      top: 72px;
+      
+    }
+    &::before{
+      
+      width: 445px;
+      height: 445px;
+      left: 635px;
+      top: 0px;
+      
+    }
+  }
+}
+@media screen and (max-width:$phone) {
+  .telemetriya__item{
+    flex-direction: column-reverse;
+    text-align: center;
+    &:nth-child(2){
+      flex-direction: column-reverse;
+    }
+  }
+  .telemetriya__wraper{
+    width: 311px;
+    margin-right: 0;
+  }
+  .telemetriya__item--easy{
+    &::after{
+      left: -10px;
+      top: 164px;
+    }
+    &::before{
+     display: none;
+    }
+  }
+  .telemetriya__item--city{
+    &::after{
+      left: -478.97px;
+      top: 5px;
+      
+    }
+    &::before{
+     display: none;
+    }
+  }
+  .telemetriya__item--zero{
+    &::after{
+     
+      width: 734.38px;
+      height: 150.37px;
+      left: 130px;
+      top: 0px;
+      
+    }
+    &::before{
+     display: none;
+    }
+  }
+  .telemetriya__subject{
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.892857px;
+  }
+  
+
+}

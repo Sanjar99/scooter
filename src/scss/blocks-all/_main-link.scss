@@ -1,0 +1,51 @@
+.main-link{
+  font-family: "Space Mono";
+  background: #FCB72B;
+  border: 3px solid transparent;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 14px 39px;
+  display: inline-block;
+  &:hover{
+    border: 3px solid #FCB72B;
+    box-sizing: border-box;
+    background-color: #fff;
+    transition: 0.5s;
+    color: #FCB72B;
+  }
+}
+.main-link--apply{
+  margin: 38px 67px 37px 0px;
+  padding:14px 67.5px
+}
+.main-link--intro{
+  margin-left: 95px;
+  margin: 0;
+}
+@media  screen and (max-width:$tablet){
+  .main-link--intro{
+    margin:0px auto;
+  }
+}
+@media screen and (max-width:$phone) {
+  .main-link--header{
+    display: none;
+  }
+  .main-link--active{
+    display: block;
+    top: 100%;
+    position: absolute;
+    z-index: 3;
+    margin-top: 200px;
+  }
+  .main-link--apply{
+  margin: 0px auto 32px;
+  padding:14px 110px
+ }
+}
+
+    

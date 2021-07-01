@@ -1,0 +1,47 @@
+.header__hamburger{
+  display: none;
+
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color:transparent ;
+  left: 60px;
+  top: 30px;
+  &:focus{
+    outline: none;
+  }
+}
+.header__hamburger::before,
+.header__hamburger-inner,
+.header__hamburger::after{
+content: '';
+width: 19.69px;
+height: 3.69px;
+background: #FCB72B;
+display: block;
+margin-bottom: 2.46px;
+}
+.header__hamburger-inner::after{
+  margin-bottom: 0px;
+}
+.header__hamburger--active .header__hamburger-inner{
+  display: none;
+}
+.header__hamburger--active::before{
+  position: relative;
+  top: 3px;
+  transform:rotate(-45deg);
+ 
+}
+.header__hamburger--active::after{
+  position: relative;
+  top: -3px;
+  transform:rotate(45deg);
+}
+@media screen and (max-width:$phone) {
+  .header__hamburger{
+    display: block;
+    margin-right: auto;
+  }
+  
+}

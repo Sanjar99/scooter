@@ -1,0 +1,84 @@
+.careers-top{
+  background-image: url("../img/Careers-bg-desctop.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  
+
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (                min-resolution: 192dpi),
+  only screen and (                min-resolution: 2dppx) { 
+    
+    .careers-top
+    {
+        background: url("../img/Careers-bg-desctop@2x.jpg");
+    }
+  }
+  }
+ 
+
+.careers-top__subject{
+  padding: 72px 0px ;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -2.5px;
+  color: #FFFFFF;
+}
+
+@media  screen and (max-width: $tablet){
+  .careers-top {
+    background-image: url("../img/Careers-bg-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (                min-resolution: 192dpi),
+  only screen and (                min-resolution: 2dppx) { 
+    
+    .careers-top
+    {
+        background: url("../img/Careers-bg-tablet@2x.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+  }
+  .careers-top__subject{
+    width: 573px;
+    margin: 0 auto;
+  }
+
+} 
+@media  screen and (max-width:$phone){
+  .careers-top {
+    background-image: url("../img/Careers-bg-phone.jpg");
+ 
+  }
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (                min-resolution: 192dpi),
+  only screen and (                min-resolution: 2dppx) { 
+    
+    .careers-top
+    {
+        background: url("../img/Careers-bg-phone@2x.jpg");
+    }
+  }
+  .careers-top__subject{
+    text-align: center;
+    width: 311px;
+  }
+  
+}

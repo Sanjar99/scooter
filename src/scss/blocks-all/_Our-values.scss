@@ -1,0 +1,127 @@
+.Our-values{
+  margin: 120px auto;
+  overflow-x: hidden;
+}
+.Our-values__subject{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: -2.14286px;
+  color: #495567;
+}
+.Our-values__list{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-top: 100px;
+}
+.Our-values__item{
+  margin-right: 30px;
+  position: relative;
+  text-align: center;
+  width: 350px;
+  &:last-child{
+    margin-right: 0px;
+  }
+  &::before{
+    width: 96px;
+    height: 96px;
+    display: block;
+    position: absolute;
+    top: 200px;
+    left: 120px;
+    background: #FCB72B;
+    border-radius: 50%;
+    font-size: 24px;
+    line-height: 96px;
+    text-align: center;
+    justify-self: center;
+    letter-spacing: -1.07143px;
+    color: #495567;
+  }
+}
+.Our-values__item--tech{
+  &::before{
+    content: '01';
+  }
+}
+.Our-values__item--integrity{
+  &::before{
+    content: '02';
+  }
+}
+.Our-values__item--community{
+  &::before{
+    content: '03';
+  }
+}
+
+.Our-values__img{
+  border-radius: 50%;
+
+  
+}
+.Our-values__title{
+  margin-top: 100px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: -1.07143px;
+  color: #495567;
+}
+
+.Our-values__text{
+  @include font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #939CAA;
+}
+@media screen and (max-width:$tablet) {
+  .Our-values{
+    margin-top: 0px;
+  }
+  .Our-values__list{
+    flex-direction: column;
+    text-align: center;
+  }
+  .Our-values__item{
+    margin:0px auto;
+    width: 457px;
+    &::before{
+      left: 170px;
+
+    }
+    &:last-child{
+
+      margin: 0px auto;
+    }
+  }
+}
+@media screen and (max-width:$phone) {
+  .Our-values{
+    margin-top: 0px;
+  }
+  .Our-values__list{
+    flex-direction: column;
+    text-align: center;
+  }
+  .Our-values__item{
+    margin:0px auto;
+    width: 311px;
+    &::before{
+      left: 100px;
+
+    }
+    &:last-child{
+
+      margin: 0px auto;
+    }
+  }
+}

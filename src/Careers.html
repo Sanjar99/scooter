@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scoot</title>
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+  <div style="display: none;">
+    <include src="dist/img/sprite.svg"></include>
+  </div>
+  <header class="header">
+    <div class="container header__container">
+      <a class="header__icon-link" href="./">
+        
+        <svg class="header__logo" width="107" height="28">
+          <use class="header__logo-svg" width="107" height="28" xlink:href="#icon-scoot"></use>
+        </svg>
+      </a>
+      <button class="header__hamburger">
+        <span class="header__hamburger-inner"></span>
+      </button>
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="./About.html" class="header__link">About</a>
+          </li>
+          <li class="header__item">
+            <a href="./Location.html" class="header__link">Location</a>
+          </li>
+          <li class="header__item">
+            <a href="./Careers.html" class="header__link">Careers</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="main-link main-link--header" href="#">Get Scootin</a>
+    </div>
+  </header>
+
+
+  <main>
+    <h1 class="visually-hidden">scoot</h1>
+    <section class="careers-top">
+      <div class="container">
+        <h1 class="careers-top__subject">Careers</h1>
+      </div>
+    </section>
+    <section class="convenience">
+      <h2 class="visually-hidden">convenience</h2>
+      <div class="container">
+        <ul class="convenience__list">
+          <li class="convenience__item convenience__item--say">
+            <div class="convenience__wraper">
+              <h3 class="convenience__subject">Care to join our mission?</h3>
+              <p class="convenience__text">We’re always looking for ambitious individuals to help us on our journey. If you’re passionate about our mission to provide clean, accessible transport to improve urban living we want to hear from you!</p>
+              <a class="main-link" href="#">Say Hello</a>
+              </div>
+
+
+            <picture>
+              <source type="image/webp" media="(max-width: 738px)"
+                srcset="./img/say-phone.webp 1x, ./img/say-phone@2x.webp 2x">
+              <source media="(max-width:738px)" srcset="./img/say-phone.jpg 1x, ./img/say-phone@2x.jpg 2x">
+              <source type="image/webp" srcset="./img/say-desctop.webp 1x, ./img/say-desctop@2x.webp 2x">
+              <img class="convenience__img" src="./img/say-desctop.jpg" alt="say-desctop"
+                srcset="./img/say-desctop.jpg 1x, ./img/say-desctop@2x.jpg 2x ">
+            </picture>
+        </ul>
+      </div>
+    </section>
+    <section class="Our-values">
+      <div class="container">
+        <h2 class="Our-values__subject">Our values</h2>
+        <ul class="Our-values__list">
+          <li class="Our-values__item Our-values__item--tech">
+
+            <picture class="Our-values__picture">
+
+              <source type="image/webp" srcset="./img/tech.webp 1x, ./img/tech@2x.webp 2x">
+              <img class="Our-values__img" src="./img/tech.jpg" alt="tech"
+                srcset="./img/tech.jpg 1x, ./img/tech@2x.jpg 2x">
+            </picture>
+            <h3 class="Our-values__title">Our tech</h3>
+            <p class="Our-values__text">We’re using cutting edge technology to drive accessible urban transportation forward. Our fully electric scooters are a joy to ride!</p>
+          </li>
+          <li class="Our-values__item Our-values__item--integrity">
+
+            <picture class="Our-values__picture">
+
+              <source type="image/webp" srcset="./img/integrity.webp 1x, ./img/integrity@2x.webp 2x">
+              <img class="Our-values__img" src="./img/integrity.jpg" alt="integrity"
+                srcset="./img/integrity.jpg 1x, ./img/integrity@2x.jpg 2x">
+            </picture>
+            <h3 class="Our-values__title">Our integrity</h3>
+            <p class="Our-values__text">We are fully committed to deliver a great yet safe, sustainable micro-mobility experience in every city we serve.</p>
+          </li>
+          <li class="Our-values__item Our-values__item--community">
+
+            <picture class="Our-values__picture">
+
+              <source type="image/webp" srcset="./img/community.webp 1x, ./img/community@2x.webp 2x">
+              <img class="Our-values__img" src="./img/community.jpg" alt="community"
+                srcset="./img/community.jpg 1x, ./img/community@2x.jpg 2x">
+            </picture>
+            <h3 class="Our-values__title">Our community</h3>
+            <p class="Our-values__text">We support every community we serve. All workers are paid a living wage based on their location and are Scoot employees.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="apply"> 
+      <div class="container">
+        <ul class="apply__list">
+          <li class="apply__item">
+            <div class="apply__wrapper">
+              <h4 class="apply__title">
+                General Manager
+              </h4>
+              <p class="apply__text">
+                Jakarta, Indonesia
+              </p>
+            </div>
+            <button class="main-link main-link--apply">Apply</button>
+          </li>
+          <li class="apply__item">
+            <div class="apply__wrapper">
+              <h4 class="apply__title">
+                UI/UX Designer
+              </h4>
+              <p class="apply__text">
+                Yokohama, Japan
+              </p>
+            </div>
+            <button class="main-link main-link--apply">Apply</button>
+          </li>
+          <li class="apply__item">
+            <div class="apply__wrapper">
+              <h4 class="apply__title">
+                Blog Content Copywriter
+              </h4>
+              <p class="apply__text">
+                New York, United States
+              </p>
+            </div>
+            <button class="main-link main-link--apply">Apply</button>
+          </li>
+          <li class="apply__item">
+            <div class="apply__wrapper">
+              <h4 class="apply__title">
+                Graphic Designer
+              </h4>
+              <p class="apply__text">
+                New York, United States
+              </p>
+            </div>
+            <button class="main-link main-link--apply">Apply</button>
+          </li>
+          <li class="apply__item">
+            <div class="apply__wrapper">
+              <h4 class="apply__title">
+                Fleet Supervisor
+              </h4>
+              <p class="apply__text">
+                Jakarta, Indonesia  
+              </p>
+            </div>
+            <button class="main-link main-link--apply">Apply</button>
+          </li>
+          <li class="apply__item">
+            <div class="apply__wrapper">
+              <h4 class="apply__title">
+                UX Analyst
+              </h4>
+              <p class="apply__text">
+                London, United Kingdom  
+              </p>
+            </div>
+            <button class="main-link main-link--apply">Apply</button>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+       <section class="call-to-action">
+      <div class="call-to-action__around">
+        <div class="call-to-action__wrapper container">
+          <p class="call-to-action__title">Sign up and Scoot off today</p>
+          <div class="call-to-action__link">
+            <a href="#" class="call-to-action__appstore">
+              <svg class="call-to-action__appstore-icon" width="159" height="56">
+                <use class="call-to-action__appstore-icon" width="159" height="56" xlink:href="#icon-appstore"></use>
+              </svg>
+             
+            </a>
+            <a href="#" class="call-to-action__googleplay">
+              <svg class="call-to-action__googleplay-icon" width="184" height="56">
+                <use class="call-to-action__googleplay-icon" width="184" height="56" xlink:href="#icon-googleplay"></use>
+              </svg>
+              
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <a class="footer__logo-link" href="./">
+          <svg class="footer__logo" width="107" height="28">
+          <use class="footer__logo-svg" width="107" height="28" xlink:href="#icon-footer-logo"></use>
+        </svg>
+      </a>
+        <nav class="footer__nav">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="./About.html" class="footer__link">About</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Location</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Careers</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="footer__social">
+          <li class="footer__social-item">
+           <svg class="footer__social-svg" width="24" height="24">
+             <use class="footer__social-img" width="24" height="24" xlink:href="#icon-fecbook"></use>
+           </svg>
+          </li>
+          <li class="footer__social-item">
+            <svg class="footer__social-svg" width="24" height="24">
+              <use class="footer__social-img" width="24" height="24"  xlink:href="#icon-Path"></use>
+            </svg>
+          </li>
+          <li class="footer__social-item">
+            <svg class="footer__social-svg" width="24" height="24">
+              <use class="footer__social-img" width="24" height="24" xlink:href="#icon-Shape"></use>
+            </svg>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="./js/main.js"></script>
+ 
+  
+</body>
+
+</html>

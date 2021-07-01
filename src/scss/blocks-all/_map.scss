@@ -1,0 +1,217 @@
+.map{
+  margin-top: 150px;
+  margin-bottom: 50px;
+  position: relative;
+}
+.location__span{
+  position: absolute;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: -1.07143px;
+  color: #495567;
+  &::before{
+    position: absolute;
+    background-image: url("../img/shape.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0px;
+    width: 110px;
+    height: 52px;
+ }
+}
+.location__span--NewYork{
+  top: 140px;
+  left: 375px;
+  &::before{
+    content: 'New York';
+  }
+}
+
+.location__span--London{
+  top: 65px;
+  left: 640px;
+  &::before{
+    content: 'London';
+  }
+}
+.location__span--Yokohama{
+  top: 135px;
+  right: 415px;
+
+  &::before{
+    content: 'Yokohama';
+  }
+}
+
+.location__span--Jakarta{
+  top: 305px;
+  right: 505px;
+  &::before{
+    content: 'Jakarta';
+  }
+}
+
+  
+
+.location__warapper{
+  background-image: url("../img/map-desctop.jpg");
+  background-size:contain;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  
+
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (                min-resolution: 192dpi),
+  only screen and (                min-resolution: 2dppx) { 
+    
+    .location__warapper
+    {
+        background: url("../img/map-desctop@2x.jpg");
+    }
+  }
+  }
+.location__warapper{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 600px;
+}
+.location__title{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;  
+  letter-spacing: -2.14286px;
+  color: #495567;
+  width: 350px;
+}
+.location__text{
+  @include font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+  width: 445px;
+}
+
+ 
+
+
+
+@media  screen and (max-width: $tablet){
+  .location__warapper {
+    background-image: url("../img/map-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (                min-resolution: 192dpi),
+  only screen and (                min-resolution: 2dppx) { 
+    
+    .location__warapper
+    {
+      background: url("../img/map-tablet@2x.jpg");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+  .location__warapper{
+    flex-direction: column;
+    text-align: center;
+    padding-top: 325px;
+    margin-top: 50px;
+  }
+  .location__text{
+    margin-bottom: 40px;
+  }
+  .location__span--NewYork{
+    top: 80px;
+    left: 160px;
+  }
+  
+  .location__span--London{
+    top: 35px;
+    left: 330px;
+  }
+  .location__span--Yokohama{
+    top: 70px;
+    right: 230px;
+  }
+  
+  .location__span--Jakarta{
+     top: 180px;
+    right: 287px;
+  }
+
+
+} 
+@media  screen and (max-width:$phone){
+  .location__warapper {
+    background-image: url("../img/map-phone.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+ 
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (                min-resolution: 192dpi),
+  only screen and (                min-resolution: 2dppx) { 
+    
+    .location__warapper
+    {
+      background: url("../img/map-phone@2x.jpg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      padding-top: 130px;
+    }
+  }
+  .location__span--NewYork{
+    top: 38px;
+    left: 185px;
+  }
+  .location__span--London{
+    top: 29px;
+    left: 253px;
+  }
+  .location__span--Yokohama{
+    top: 45px;
+    right: 176px;
+  }
+  .location__span--Jakarta{
+    top: 91px;
+    right: 201px;
+  }
+  .location__span::before{
+    content: '';
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    background-image: none;
+    background: #FCB72B;
+  }
+}
+  
+  
+    
+
+
+  
+  

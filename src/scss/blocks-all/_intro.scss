@@ -1,0 +1,84 @@
+.intro{
+  background-image: url("../img/About-Bitmap-dectop.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  
+
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (                min-resolution: 192dpi),
+  only screen and (                min-resolution: 2dppx) { 
+    
+    .intro
+    {
+        background: url("../img/About-Bitmap-dectop@2x.jpg");
+    }
+  }
+  }
+ 
+
+.intro__subject{
+  padding: 72px 0px ;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -2.5px;
+  color: #FFFFFF;
+}
+
+@media  screen and (max-width: $tablet){
+  .intro {
+    background-image: url("../img/About-Bitmap-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (                min-resolution: 192dpi),
+  only screen and (                min-resolution: 2dppx) { 
+    
+    .intro
+    {
+        background: url("../img/About-Bitmap-tablet@2x.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+  }
+  .intro__subject{
+    width: 573px;
+    margin: 0 auto;
+  }
+
+} 
+@media  screen and (max-width:$phone){
+  .intro {
+    background-image: url("../img/About-Bitmap-phone.jpg");
+ 
+  }
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (                min-resolution: 192dpi),
+  only screen and (                min-resolution: 2dppx) { 
+    
+    .intro
+    {
+        background: url("../img/About-Bitmap-phone@2x.jpg");
+    }
+  }
+  .intro__subject{
+    text-align: center;
+    width: 311px;
+  }
+  
+}
